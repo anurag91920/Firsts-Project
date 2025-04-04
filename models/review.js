@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const reviewSchema = new Schema({
+const reviewSchema = new mongoose.Schema({
     comment: {
     type: String,
     required: [true, "Comment cannot be empty"], // Validation
